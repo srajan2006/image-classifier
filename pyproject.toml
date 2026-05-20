@@ -3,7 +3,7 @@ name = "image-recognisation"
 version = "0.1.0"
 description = "Image recognition app"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11,<3.12"
 
 dependencies = [
     "streamlit",
@@ -11,8 +11,5 @@ dependencies = [
     "pandas",
     "pillow",
     "opencv-python-headless",
+    "tensorflow-cpu",
 ]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
