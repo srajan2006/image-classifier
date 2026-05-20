@@ -1,13 +1,19 @@
 [project]
 name = "image-recognisation"
 version = "0.1.0"
-description = "Add your description here"
+description = "Image recognition web application using Streamlit and TensorFlow"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
+
 dependencies = [
-    "numpy",
-    "opencv-python",
-    "pandas",
-    "streamlit",
-    "tensorflow",
+    "streamlit>=1.45.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "tensorflow>=2.19.0",
+    "opencv-python-headless>=4.11.0.86",
+    "pillow>=11.0.0",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
